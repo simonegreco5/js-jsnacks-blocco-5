@@ -6,3 +6,13 @@ const people = [
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+// stampiamo con ciclo for
+for (let i = 0; i < people.length; i++){
+  console.log(people[i].name);
+}
+
+// stampiamo con ciclo forEach 
+people.forEach((person)=>{
+  console.log(person.name);
+})
