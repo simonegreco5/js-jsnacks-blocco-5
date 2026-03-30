@@ -22,9 +22,13 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
-// metodo non corretto (DA RIVEDERE)
+// metodo .find non corretto (DA RIVEDERE)
 const classRoom = students.find((student)=>{
   return student.class === '3C'
+
+  // if (student.name === 'Marco Lanci'){
+  //   return student.class                   -->  // prova per vedere se stampa solo la classe,
+  // }                                             // ma stampa sempre l'intero oggetto
 })
 console.log(classRoom)
 
@@ -32,7 +36,7 @@ console.log(classRoom)
 // e assegnandola poi nel condizionale all'interno del forEach
 let classroom;
 students.forEach((student)=>{
-  if (student.class === '3C'){
+  if (student.name === 'Marco Lanci'){
     classroom = '3C'
   }
 })
@@ -43,7 +47,7 @@ let classe;
 for (let i = 0; i < students.length; i++){
   let student = students[i]
 
-  if (student.class === '3C'){
+  if (student.name === 'Marco Lanci'){
     classe = '3C'
   }
 }
