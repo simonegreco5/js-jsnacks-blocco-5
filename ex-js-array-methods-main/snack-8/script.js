@@ -24,13 +24,10 @@ const students = [
 
 // metodo .find non corretto (DA RIVEDERE)
 const classRoom = students.find((student)=>{
-  return student.class === '3C'
+  return student.name === 'Marco Lanci'
 
-  // if (student.name === 'Marco Lanci'){
-  //   return student.class                   -->  // prova per vedere se stampa solo la classe,
-  // }                                             // ma stampa sempre l'intero oggetto
 })
-console.log(classRoom)
+console.log(classRoom.class)
 
 // per stampare correttamente il valore 3C in console utilizziamo il metodo forEach, denominado una variabile
 // e assegnandola poi nel condizionale all'interno del forEach
