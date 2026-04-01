@@ -22,7 +22,7 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
-// metodo .find non corretto (DA RIVEDERE)
+// utilizziamo il metodo .find
 const classRoom = students.find((student)=>{
   return student.name === 'Marco Lanci'
 
